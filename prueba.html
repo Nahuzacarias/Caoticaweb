@@ -59,7 +59,7 @@
         
         .gallery-item img {
             width: 100%;
-            height: 350px;
+            height: 500px;
             object-fit: cover;
             transition: transform 0.5s;
         }
@@ -287,54 +287,55 @@
     </a>
 
     <!-- Hero Section - Convertido a Carrusel -->
-    <section id="inicio" class="hero-section">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="carousel-overlay">
-                        <div class="carousel-content">
-                            <h1 class="display-3 mb-4 fw-bold">CAOTICA</h1>
-                            <p class="lead mb-2">IMPRESIONES 3D</p>
-                            <p class="mb-5">Transformamos tus ideas en objetos reales con la más avanzada tecnología</p>
-                            <a href="#contacto" class="btn btn-primary btn-lg me-3">Contáctanos</a>
-                            <a href="#galería" class="btn btn-outline-light btn-lg">Galería</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-overlay">
-                        <div class="carousel-content">
-                            <h1 class="display-3 mb-4 fw-bold">DISEÑOS ÚNICOS</h1>
-                            <p class="lead mb-2">PERSONALIZACIÓN TOTAL</p>
-                            <p class="mb-5">Creamos objetos a medida según tus necesidades específicas</p>
-                            <a href="#contacto" class="btn btn-primary btn-lg me-3">Contáctanos</a>
-                            <a href="#galería" class="btn btn-outline-light btn-lg">Galería</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-overlay">
-                        <div class="carousel-content">
-                            <h1 class="display-3 mb-4 fw-bold">CALIDAD PREMIUM</h1>
-                            <p class="lead mb-2">ACABADOS PROFESIONALES</p>
-                            <p class="mb-5">Utilizamos materiales de primera calidad y tecnología de punta</p>
-                            <a href="#contacto" class="btn btn-primary btn-lg me-3">Contáctanos</a>
-                            <a href="#galería" class="btn btn-outline-light btn-lg">Galería</a>
-                        </div>
+   <!-- Modificar la sección del carrusel para incluir imágenes de fondo -->
+<section id="inicio" class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('./images/Picador.jpg');">
+                <div class="carousel-overlay">
+                    <div class="carousel-content">
+                        <h1 class="display-3 mb-4 fw-bold">CAOTICA</h1>
+                        <p class="lead mb-2">IMPRESIONES 3D</p>
+                        <p class="mb-5">Accesorios alternativos
+                            hechos a mano con materiales de primera calidad. Personalizados con o sin imágenes de referencia para ajustarse a la estética que más te guste</p>
+                        <a href="#contacto" class="btn btn-primary btn-lg me-3">Contáctanos</a>
+                        <a href="#galería" class="btn btn-outline-light btn-lg">Galería</a>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
+            <div class="carousel-item" style="background-image: url('./images/banner2.jpg');">
+                <div class="carousel-overlay">
+                    <div class="carousel-content">
+                        <h1 class="display-3 mb-4 fw-bold">DISEÑOS ÚNICOS</h1>
+                        <p class="lead mb-2">PERSONALIZACIÓN TOTAL</p>
+                        <p class="mb-5">Creamos objetos a medida según tus necesidades específicas</p>
+                        <a href="#contacto" class="btn btn-primary btn-lg me-3">Contáctanos</a>
+                        <a href="#galería" class="btn btn-outline-light btn-lg">Galería</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/carousel-bg3.jpg');">
+                <div class="carousel-overlay">
+                    <div class="carousel-content">
+                        <h1 class="display-3 mb-4 fw-bold">CALIDAD PREMIUM</h1>
+                        <p class="lead mb-2">ACABADOS PROFESIONALES</p>
+                        <p class="mb-5">Utilizamos materiales de primera calidad y tecnología de punta</p>
+                        <a href="#contacto" class="btn btn-primary btn-lg me-3">Contáctanos</a>
+                        <a href="#galería" class="btn btn-outline-light btn-lg">Galería</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
     <!-- Features Section - Introducción -->
     <section id="introduccion" class="py-5">
         <div class="container">
@@ -379,14 +380,14 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="fw-bold">Galeria</h2>
-                <p class="lead">Explora algunos de nuestros mejores proyectos realizados</p>
+                <p class="lead">Explora algunos de nuestros proyectos realizados</p>
             </div>
             
             <!-- Item 1: Left to Right -->
             <div class="row align-items-center mb-5">
                 <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                     <div class="gallery-item">
-                        <img src="/api/placeholder/800/600" alt="Prototipo arquitectónico" class="img-fluid">
+                        <img src="./images/foto1.jpg" alt="Prototipo arquitectónico" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
@@ -402,14 +403,16 @@
             <div class="row align-items-center mb-5">
                 <div class="col-md-6 order-md-2" data-aos="fade-left" data-aos-duration="1000">
                     <div class="gallery-item">
-                        <img src="/api/placeholder/800/600" alt="Piezas mecánicas" class="img-fluid">
+                        <img src="./images/foto2.jpg" alt="Piezas mecánicas" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6 order-md-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                     <div class="gallery-content">
-                        <h3>Componentes Mecánicos</h3>
-                        <p>Piezas de repuesto y componentes personalizados para maquinaria industrial con alta resistencia y precisión milimétrica. Fabricados con materiales de alta calidad.</p>
-                        <p>Reducimos los tiempos de espera y costos asociados a la obtención de piezas específicas, permitiendo mantener equipos operativos sin largas interrupciones.</p>
+                        <h3>Diseños personalizados</h3>
+                        <p>Creamos piezas únicas mediante impresión 3D, adaptadas a las necesidades específicas de cada cliente. Ofrecemos soluciones personalizadas que combinan funcionalidad, creatividad y precisión.</p>
+                        <p>Ya sea para uso personal, profesional o comercial, transformamos tus ideas en objetos concretos, con una amplia variedad de materiales, colores y formas.
+
+                            Nuestro enfoque está centrado en el detalle y la calidad, para garantizar resultados que se ajusten a tus expectativas.</p>
                     </div>
                 </div>
             </div>
